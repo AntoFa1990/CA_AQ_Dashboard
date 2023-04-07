@@ -1,10 +1,10 @@
 ## Background
 
-This is group project done on ETL, Python Flask, JavaScript, HTML and Data Visualizations
+This was a group project using the ETL, Python Flask, JavaScript, HTML and Data Visualizations to evaluate the relative air quality of California cities.
 
 
 
-Contributors: 
+## Contributors: 
 
 Shweta Joshi
 
@@ -16,24 +16,24 @@ Dang Tran
 
 Reed Zimpfer
 
-### Introduction
+## Introduction
 
-In this Project we use publically available data to evaluate air pollution, which  is a leading cause of death across the globe, contributing to stroke, heart disease, lung cancer, and other respiratory illness. The goal of this project is to document and visualize the air quality of the California state area.
+In this Project we use publically available data to evaluate air pollution, which  is a leading cause of death across the globe, contributing to stroke, heart disease, lung cancer, and other respiratory illness. The goal of this project is to document and visualize the air quality of the California state area as a tool for promoting public health.
 
 <img width="618" alt="image" src="https://user-images.githubusercontent.com/116701851/230517802-3e1f1db3-bd76-4c33-8087-cf52158a77da.png">
 
 
-### Project Overview:
+## Project Overview:
 
-#### Who is the target audience?
+### Who is the target audience?
 General Public
 
-#### Why is it relevant to them?
+### Why is it relevant to them?
 Health Awareness & Protection
 Community Engagement & Advocacy
 Planning & Decision Making
 
-#### About The Dataset
+### About The Dataset
 Our core dataset came from the Environmental Protection Agency (EPA)'s AQS (Air Quality System) database. 
 
 https://www.epa.gov/air-trends/air-quality-cities-and-counties
@@ -51,13 +51,11 @@ Sulfur Dioxide
 
 From the initial source data , a subset of data from the Sate California and Cities was extracted and converted into a CSV file. By applying the GeoApfy Key, basic lat/long coordinates were determined, then using the pandas dataframe, a final CSV data file was created.
 
-## DataBase
-
 Using the output CSV file, a Database was created using SQlite.
 
 <img width="603" alt="image" src="https://user-images.githubusercontent.com/116701851/230516560-a68d1dd2-7181-4f0f-ade4-9a30b156140d.png">
 
-## DataBase
+## Flask & Dashboard
 From the created Database, a python Flask was further deployed.
 
 Then, using Javascript ,leaflet and HTML, a dashboard was created in the local port. The dashboard includes a statewide map showing the pollutant level for each California city, and whether or not it is above/below the established healthy level via a pop up hover box.
